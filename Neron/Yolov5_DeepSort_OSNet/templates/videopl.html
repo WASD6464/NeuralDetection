@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link rel="icon" href="data:;base64,=">
+  <title>video</title>
+ </head>
+ <body>
+  <video autoplay width="400" height="300" controls="controls">
+   <source src="{{ url_for('video_feed') }}" type='video/mp4'>
+  </video>
+  <h2>Your Dates</h2>
+   <h6>Кадры | id маски | слева снизу  |  сверху справа | ширина | высота</h6>
+   <p>
+    <pre>{{ text }}</pre>
+   </p>
+ </body>
+</html>
